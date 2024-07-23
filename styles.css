@@ -1,0 +1,168 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.video_hintergrund {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video_hintergrund video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.startseite {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+}
+
+.startseite .txt{
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin: 25px;
+    font-weight: bold;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -10px 10px 0 #000,
+        1px 1px 0 #000;
+}
+
+.auswahl {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.startseite label {
+    display: block;
+    margin: 10px 0 5px;  
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -3px 3px 0 #000,
+        1px 1px 0 #000;
+}
+
+.optionen {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    margin: 0 20px 0 0;
+}
+
+.optionen:hover {
+    background-color: rgb(19, 9, 109);
+    transition: 1s;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: rgb(19, 9, 109);
+    transition: 1s;
+}
+
+.quiz_container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.frage {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(19, 9, 109, 0.7); 
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.btn_gitter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 35px;
+}
+
+.versteckt {
+    display: none;
+}
+
+.ergebnis {
+    font-size: 40px;
+}
+
+.antworten {
+    padding: 30px;
+}
+
+.richtig {
+    color: white;
+    padding: 10px;
+    margin: 5px 0; 
+    border-radius: 30px;
+    background-color: rgba(19, 9, 109, 0.7); 
+    border: 2px solid green;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.falsch {
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 30px;
+    background-color: rgba(19, 9, 109, 0.7);
+    border: 2px solid red;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}

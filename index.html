@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="video_hintergrund">
+        <video autoplay muted loop>
+            <source src="Hintergrund/walkingHome.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
+    <div class="startseite">
+        <div class="txt">
+            <h1>Trivia</h1>
+            <p>Das Quiz für jeden mit bisschen Grips in der Birne.</p>
+        </div>
+        <div class="auswahl">
+            <form id="auswahl_formular">
+                <label for="kategorie">Kategorie:</label>
+                <select id="kategorie" name="kategorie" class="optionen">
+                    <option value="">Beliebig</option>
+                    <option value="9">Allgemeinwissen</option>
+                    <option value="21">Sport</option>
+                    <option value="35">Kunst</option>
+                    <option value="11">Film</option>
+                    <option value="23">Geschichte</option>
+                    <option value="22">Geografie</option>
+                    <option value="18">Computer</option>
+                    <option value="24">Politik</option>
+                    <option value="27">Tiere</option>
+                    <option value="28">KFZ</option>
+                    <option value="12">Musik</option>
+                    <option value="31">Anime & Manga</option>
+                    <option value="30">Gadgets</option>
+                    <option value="14">TV</option>
+                    <option value="29">Comics</option>
+                </select>
+                <label for="anzahl">Anzahl der Fragen:</label>
+                <select id="anzahl" name="anzahl" class="optionen">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <button type="submit" class="btn">Quiz starten</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
